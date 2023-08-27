@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout<<"Enter a Number";
+    cin>>n;
+    
+    int prod=1;
+    int NextNum=1;
+    while(NextNum<=n){
+        prod=prod*NextNum;
+        NextNum++;
+    }
+    cout<<"Factorial= "<<prod<<endl; 
+}
