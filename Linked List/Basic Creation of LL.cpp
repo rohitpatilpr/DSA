@@ -17,7 +17,7 @@ int main() {
     Node *n2=new Node(20);
     
     Node *head=n1;
-    n1.next=n2;
+    n1->next=n2;
     
     cout<<head->data<<endl;
     cout<<head->next->data;
