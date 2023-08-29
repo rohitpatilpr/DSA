@@ -13,11 +13,11 @@ class Node{
 };
 
 int main() {
-    Node n1(10);
-    Node n2(20);
+    Node *n1=new Node(10);
+    Node *n2=new Node(20);
     
-    Node *head=&n1;
-    n1.next=&n2;
+    Node *head=n1;
+    n1.next=n2;
     
     cout<<head->data<<endl;
     cout<<head->next->data;
